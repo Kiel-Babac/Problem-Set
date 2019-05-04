@@ -1,0 +1,35 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+int main()
+{
+	int num_one, num_two, num_three, largest;
+	
+	cout << "Value of the First Number: ";
+	cin >> num_one;
+	
+	cout << "Value of the Second Number: ";
+	cin >> num_two;
+	
+	cout << "Value of the Third Number: ";
+	cin >> num_three;
+	
+	if (num_one > num_two && num_one > num_three)
+	{largest = num_one;
+	}
+	else if (num_two > num_one && num_two > num_three)
+	{largest = num_two;
+	}
+	else if (num_three > num_one && num_three > num_two)
+	{largest = num_three;
+	}
+	else
+	cout << "There are no largest number!";
+	break;
+	
+	cout << "The largest of the three numbers is: " << largest;
+	
+	_getch();
+	return 0;
+}

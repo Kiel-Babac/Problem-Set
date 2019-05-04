@@ -1,0 +1,42 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+int main()
+{
+	char package;
+	int bill, hrs;
+	
+	cout << "Enter the Package you choose (in upper-case): ";
+	cin >> package;
+	
+	cout << "Enter number of hours you used the package: ";
+	cin >> hrs;
+	
+	switch (package)
+	{
+		case 'A':
+			bill = 995;
+			if(hrs > 10){bill += (hrs - 10) * 20;
+			}
+			break;
+			
+		case 'B':
+			bill = 1495;
+			if (hrs > 20){bill += (hrs - 10) * 10;
+			}
+			break;
+			
+		case 'C':
+			bill = 1995;
+			break;
+			
+		default:
+			cout << "Invalid!";
+	}
+	cout << "Your bill is: " << bill;
+	
+	_getch();
+	return 0;
+	
+}

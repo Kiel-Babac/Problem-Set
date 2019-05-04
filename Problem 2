@@ -1,0 +1,29 @@
+#include <iostream>
+#include <conio.h>
+ 
+ using namespace std;
+ 
+ int main()
+ {
+ 	int pre_gal, gal;
+ 	float bill;
+ 	float charge = 1.10;
+ 	float l_charge = 20;
+ 	
+ 	cout << "Enter your Gallon Cosumption Previously: ";
+ 	cin >> pre_gal;
+ 	
+ 	cout << "Enter your Gallon Consumption Recently: ";
+ 	cin >> gal;
+ 	
+ 	bill = 35;
+ 	bill = bill + (pre_gal * charge);
+ 	if(pre_gal > 0)
+ 	{bill = bill + l_charge;
+	}
+	 
+	 cout << "Your water bill is:P" << bill;
+	 
+	 _getch();
+	 return 0;
+ }
